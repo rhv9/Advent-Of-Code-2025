@@ -27,15 +27,15 @@ for i in range(0, len(nums)):
             index = j
     shortestDistances.append((i, index, shortestDist))
 
-shortestDistances.sort()
+#shortestDistances.sort()
 
 def compare(item1, item2):
     return item1[2] - item2[2]
 
 sortedNums = sorted(shortestDistances, key=cmp_to_key(compare))
 
-for i in range(0, len(nums)):
-    print(nums[sortedNums[i][0]], "--", nums[sortedNums[i][1]], "--distance:", sortedNums[i][2])
+#for i in range(0, len(nums)):
+#    print(nums[sortedNums[i][0]], "--", nums[sortedNums[i][1]], "--distance:", sortedNums[i][2])
 
 end = time.time()
 print("Result: ", result)
